@@ -1,6 +1,6 @@
 # Defining the variables for rectangle area calculation
 length = 10
-width =5
+width = 5
 
 # Calculating the area of the rectangle
 area = length * width
