@@ -12,9 +12,11 @@ match day:
         print("It's Thursday, let's wrap up the week.")
     case "friday":
         print("It's friday, let's finish strong.")
+    case "saturday" | "sunday":
+        print("Ladies and gentlemen, it's a weekend!")
     case _:
-        print("""It's the weekend , time to relax and recharge
-              and spend quality time with family""")
+        print("You didn't enter a valid day of the week.")# End of program)
+        
     
 
 
