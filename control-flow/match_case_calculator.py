@@ -1,19 +1,23 @@
 # Simple calculator that matches case for operations
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-# Prompting user to enter an operator
-operator = input("Enter an operator (+, -, *, /): ")
+# Ask the user to input two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-# constructing a match-case statement to handle different operations
-match operator:
+# Ask for the type of operation
+operation = input("Choose the operation (+, -, *, /): ")
+
+# Perform calculation using match case
+match operation:
     case "+":
-        print("The result is ", num1 + num2)
+        print("Result:", num1 + num2)
     case "-":
-        print("The result is ", num1 - num2)
+        print("Result:", num1 - num2)
     case "*":
-        print("The result is ", num1 * num2)
+        print("Result:", num1 * num2)
     case "/":
-        print("The result is ", num1 / num2)
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            print("Result:", num1 / num2)
     case _:
-        print("Invalid operator")
-
+        print("Invalid operation selected.")
