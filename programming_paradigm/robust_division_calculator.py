@@ -19,7 +19,7 @@ def safe_divide(numerator, denominator):
 
     except ValueError:
         # Handles invalid numeric conversion
-        return "Error: Please provide numeric values only."
+        return "Error: Please enter numeric values only."
 
     except ZeroDivisionError:
         # Handles division by zero
